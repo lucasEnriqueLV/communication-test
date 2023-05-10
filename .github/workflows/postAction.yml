@@ -1,0 +1,27 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: fjogeleit/http-request-action@v1
+      - with:
+          url: 'https://1464-191-189-8-104.sa.ngrok.io/job/remote-load-test/buildWithParameters?token=7f0092d2baadef9ba49f2835596884a4&APILINK=google.com'
+          method: 'POST'
+          customHeaders: '{"Content-Type": "application/json"}'
