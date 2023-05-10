@@ -27,4 +27,4 @@ jobs:
           method: 'POST'
           username: 'lucas'
           password: 'lucas'
-          customHeaders: '{"Content-Type": "application/json", {"_class":"hudson.security.csrf.DefaultCrumbIssuer","crumb":"01ce47fac63080048daa78cc8b5a41bd9cf8f5e4d668b2aea876b6f8e8f97397","crumbRequestField":"Jenkins-Crumb"}}'
+          customHeaders: '{"Content-Type": "application/json", "_class":"hudson.security.csrf.DefaultCrumbIssuer","crumb":"01ce47fac63080048daa78cc8b5a41bd9cf8f5e4d668b2aea876b6f8e8f97397","crumbRequestField":"Jenkins-Crumb"}'
