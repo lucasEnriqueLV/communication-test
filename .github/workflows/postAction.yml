@@ -23,7 +23,7 @@ jobs:
       - name: Post request
         uses: fjogeleit/http-request-action@v1
         with:
-          url: 'https://ca1c-191-189-8-104.sa.ngrok.io/job/remote-load-test/buildWithParameters?token=7f0092d2baadef9ba49f2835596884a4&apilink=google.com'
+          url: 'https://ca1c-191-189-8-104.sa.ngrok.io/job/remote-load-test/buildWithParameters?token=520c357e0ee6d1092489544d12b2f44b&apilink=google.com'
           method: 'POST'
           username: 'lucas'
           password: 'lucas'
